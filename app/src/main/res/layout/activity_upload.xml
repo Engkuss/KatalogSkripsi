@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.subayu.agus.katalog.Upload">
+    <Button
+        android:id="@+id/btnupload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btnupload"/>
+    <EditText
+        android:id="@+id/edfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="nama file"
+        android:enabled="false"
+        android:layout_toEndOf="@+id/btnupload" />
+    <EditText
+        android:id="@+id/ednim"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hintnim"
+        android:layout_below="@+id/edfile" />
+    <EditText
+        android:id="@+id/edjudul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="masukan judul"
+        android:layout_below="@+id/ednim" />
+    <LinearLayout
+        android:layout_below="@id/edjudul"
+        android:id="@+id/ln1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioGroup
+            android:layout_margin="8dp"
+            android:id="@+id/radioGroup"
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:layout_weight="1"
+                android:id="@+id/radioButton1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PKL"
+                android:textSize="18sp"/>
+
+            <RadioButton
+                android:id="@+id/radioButton2"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Skripsi"
+                android:textSize="18sp"/>
+
+        </RadioGroup>
+    </LinearLayout>
+    <com.github.barteksc.pdfviewer.PDFView
+        android:id="@+id/pdfView"
+        android:layout_below="@+id/ln1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <Button
+        android:id="@+id/btupload"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Upload File"/>
+</RelativeLayout>

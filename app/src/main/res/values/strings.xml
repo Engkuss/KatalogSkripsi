@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Katalog Skripsi</string>
+    <string name="app">Katalog</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="menu1">Skripsi</string>
+    <string name="menu2">PKL</string>
+    <string name="menu3">Upload Data</string>
+    <string name="menu4">Tentang</string>
+    <string name="kl">Fakultas</string>
+
+    <string name="nama">Nama Mahasiswa</string>
+    <string name="nim">Nim Mahasiswa</string>
+    <string name="skripsi">Judul Skripsi Mahasiswa</string>
+
+    <string name="cari">Ketik Judul Skripsi</string>
+    <string name="skripsi2">Skripsi - UNISLA</string>
+    <string name="pkl">PKL - UNISLA</string>
+
+    <string name="btnupload">Cari File</string>
+    <string name="hintnim">Masukan Nim</string>
+
+</resources>
